@@ -550,7 +550,7 @@ diag.panel <- function(x, varname, diag.pars, axis.pars, xpos, ypos, xylim) {
       panel.barchart(1:length(table(x)), 100*table(x)/sum(table(x)), 
                      horizontal=FALSE, col=diag.pars$hist.color)
     }
-    grid.text(varname, 0.5, 0.85, gp=gpar(fontsize=diag.pars$fontsize))
+    grid.text(varname, 0.5, 0.85, gp=gpar(fontsize=diag.pars$fontsize, fontface=2))
     popViewport(1)
   }
 
